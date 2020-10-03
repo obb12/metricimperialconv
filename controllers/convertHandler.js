@@ -17,7 +17,7 @@ function ConvertHandler() {
   this.getUnit = function(input) {
     var result;
     var a =  parseFloat(input)
-    result = input.replace(/\d+/g,'');
+    result = input.replace(a,'');
 
     return result;
   };
