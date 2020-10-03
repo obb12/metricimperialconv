@@ -69,25 +69,25 @@ function ConvertHandler() {
     const miToKm = 1.60934;
     var result;
     if (initUnit == "gal") {
-      return initNum * galToL .toFixed(5)
+      return initNum * galToL
     }
     else if (initUnit == "L") {
-      return initNum / galToL .toFixed(5)
+      return initNum / galToL
     }
     else if (initUnit == "lbs") {
-      return initNum * lbsToKg .toFixed(5)
+      return initNum * lbsToKg
 
     }
     else if (initUnit == "kg") {
-      return initNum / lbsToKg .toFixed(5)
+      return initNum / lbsToKg
 
     }
     else if (initUnit == "mi") {
-      return initNum * miToKm .toFixed(5)
+      return initNum * miToKm
 
     }
     else if (initUnit == "km") {
-      return initNum /  lbsToKg .toFixed(5)
+      return initNum /  lbsToKg
 
     }
     else {
@@ -97,7 +97,7 @@ function ConvertHandler() {
 
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
     var result;
-  result =   `${initNum} ${this.spellOutUnit(initUnit)} converts to ${returnNum} ${this.spellOutUnit(returnUnit)}`
+  result =   `${initNum} ${this.spellOutUnit(initUnit)} converts to ${returnNum.toFixed(5)} ${this.spellOutUnit(returnUnit)}`
 
     return result;
   };
