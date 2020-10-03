@@ -16,7 +16,7 @@ function ConvertHandler() {
 
   this.getUnit = function(input) {
     var result;
-    var a =  parseInt(input)
+    var a =  parseFloat(input)
     result = input.replace(a,'');
 
     return result;
