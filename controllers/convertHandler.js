@@ -25,7 +25,7 @@ function ConvertHandler() {
   this.getReturnUnit = function(initUnit) {
     var result;
     if (initUnit == "gal") {
-      return "L"
+      return "l"
     } else if (initUnit == "l") {
       return "gal"
     }
