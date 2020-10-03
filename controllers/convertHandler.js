@@ -17,7 +17,7 @@ function ConvertHandler() {
   this.getUnit = function(input) {
     var result;
     var a =  parseFloat(input)
-    result = input.replace(/[a-zA-Z]/,'');
+    result = input.replace(/\d+/g,'');
 
     return result;
   };
@@ -37,6 +37,14 @@ function ConvertHandler() {
       return "lbs"
 
     }
+    else if (initUnit == "mi") {
+      return "km"
+
+    }
+    else if (initUnit == "km") {
+      return "mi"
+
+    }
     else {
    return "invalid unit"
 
@@ -50,6 +58,8 @@ function ConvertHandler() {
     units["gal"] = "gallons"
     units["lbs"] = "pounds"
     units["kg"] = "kilogram"
+    units["mi"] = "miles"
+    units["km"] = "kilometers"
     return units[unit];
   };
 
@@ -70,6 +80,14 @@ function ConvertHandler() {
     }
     else if (initUnit == "kg") {
       return initNum / lbsToKg
+
+    }
+    else if (initUnit == "mi") {
+      return initNum * miToKm
+
+    }
+    else if (initUnit == "km") {
+      return initNum /  lbsToKg
 
     }
     else {
