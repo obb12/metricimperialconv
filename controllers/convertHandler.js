@@ -18,7 +18,14 @@ function ConvertHandler() {
     var result;
     var a =  parseFloat(input)
     result = input.replace(a,'');
-
+    var units = [];
+    units["l"] = "liters";
+    units["gal"] = "gallons"
+    units["lbs"] = "pounds"
+    units["kg"] = "kilogram"
+    units["mi"] = "miles"
+    units["km"] = "kilometers"
+    result =  units.includes("result") ? result : "invalid unit"
     return result;
   };
 
