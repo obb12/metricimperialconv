@@ -97,7 +97,7 @@ function ConvertHandler() {
 
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
     var result;
-  result =   `${initNum} ${this.spellOutUnit(initUnit)} converts to ${Number.parseFloat(returnNum).toFixed(5).toString()} ${this.spellOutUnit(returnUnit)}`
+  result =   `${initNum} ${this.spellOutUnit(initUnit)} converts to ${Number(Number.parseFloat(returnNum).toFixed(5))} ${this.spellOutUnit(returnUnit)}`
 
     return result;
   };
