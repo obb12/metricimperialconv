@@ -69,25 +69,25 @@ function ConvertHandler() {
     const miToKm = 1.60934;
     var result;
     if (initUnit == "gal") {
-      return initNum * galToL
+      return initNum * galToL .toFixed(5)
     }
     else if (initUnit == "L") {
-      return initNum / galToL
+      return initNum / galToL .toFixed(5)
     }
     else if (initUnit == "lbs") {
-      return initNum * lbsToKg
+      return initNum * lbsToKg .toFixed(5)
 
     }
     else if (initUnit == "kg") {
-      return initNum / lbsToKg
+      return initNum / lbsToKg .toFixed(5)
 
     }
     else if (initUnit == "mi") {
-      return initNum * miToKm
+      return initNum * miToKm .toFixed(5)
 
     }
     else if (initUnit == "km") {
-      return initNum /  lbsToKg
+      return initNum /  lbsToKg .toFixed(5)
 
     }
     else {
