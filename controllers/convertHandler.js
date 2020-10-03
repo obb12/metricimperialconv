@@ -25,7 +25,7 @@ function ConvertHandler() {
     units["kg"] = "kilogram"
     units["mi"] = "miles"
     units["km"] = "kilometers"
-    result =  units.includes("result") ? result : "invalid unit"
+    result =  units.includes(result) ? result : "invalid unit"
     return result;
   };
 
