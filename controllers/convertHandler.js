@@ -26,7 +26,7 @@ function ConvertHandler() {
     var result;
     if (initUnit == "gal") {
       return "L"
-    } else if (initUnit == "L") {
+    } else if (initUnit == "l") {
       return "gal"
     }
     else if (initUnit == "lbs") {
@@ -54,7 +54,7 @@ function ConvertHandler() {
   this.spellOutUnit = function(unit) {
     var result;
     var units = [];
-    units["L"] = "liters";
+    units["l"] = "liters";
     units["gal"] = "gallons"
     units["lbs"] = "pounds"
     units["kg"] = "kilogram"
@@ -71,7 +71,7 @@ function ConvertHandler() {
     if (initUnit == "gal") {
       return initNum * galToL
     }
-    else if (initUnit == "L") {
+    else if (initUnit == "l") {
       return initNum / galToL
     }
     else if (initUnit == "lbs") {
