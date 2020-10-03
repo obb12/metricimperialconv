@@ -10,7 +10,7 @@ function ConvertHandler() {
 
   this.getNum = function(input) {
     var result;
-    return parseInt(input) ? parseInt(input) : 1
+    return parseFloat(input) ? parseFloat(input) : 1
     return result;
   };
 
@@ -38,9 +38,9 @@ function ConvertHandler() {
 
     }
     else {
-      return ;
+   return "invalid unit"
+
     }
-    return result;
   };
 
   this.spellOutUnit = function(unit) {
