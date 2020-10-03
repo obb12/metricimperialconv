@@ -87,7 +87,7 @@ function ConvertHandler() {
 
     }
     else if (initUnit == "km") {
-      return initNum /  lbsToKg
+      return initNum /  miToKm
 
     }
     else {
