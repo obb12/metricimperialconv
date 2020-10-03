@@ -19,31 +19,30 @@ function ConvertHandler() {
     var a =  parseFloat(input)
     result = input.replace(a,'');
     if (result == "gal") {
-      return "l"
-    } else if (result == "l") {
       return "gal"
+    } else if (result == "l") {
+      return "l"
     }
     else if (result == "lbs") {
-      return "kg"
-
-    }
-    else if (result == "kg") {
       return "lbs"
 
     }
+    else if (result == "kg") {
+      return "kg"
+
+    }
     else if (result == "mi") {
-      return "km"
+      return "mi"
 
     }
     else if (result == "km") {
-      return "mi"
+      return "km"
 
     }
     else {
    return "invalid unit"
 
     }
-    return result;
   };
 
   this.getReturnUnit = function(initUnit) {
